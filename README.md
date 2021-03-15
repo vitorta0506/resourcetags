@@ -1,6 +1,11 @@
 # resourcetags
 Scripts em python para adicionar tag's em alguns recursos da AWS baseado nas instâncias EC2
 
+## Requisitos
+python 3 instalado
+pip para poder instalar o boto3
+aws cli para poder configurar os acessos da aws
+
 ## Funcionamento
 
 - tag-ebs.py = Adiciona as tags aos volumes que estão associadas a EC2. As tags são adicionadas no volume baseada nas tags que existem no recusro EC2.
@@ -15,7 +20,33 @@ O código que não tiver variável não deve ser alterado, devemos somente rodar
 
 Os scripts acima adicionam tags a todos os recursos que encontrarem, os scripts da pasta tag-daily adicionam tags somente nos recursos do dia.
 
-Uma sugestão é que rode os scripts que adicioban todas as tags e depois rode o script que adiciona tags diariamente, com isso fica mais simples colocar tags nos novos recursos.
+Uma sugestão é que rode os scripts que adicionam todas as tags e depois rode o script que adiciona tags diariamente, com isso fica mais simples colocar tags nos novos recursos.
 
 
+## Como rodar os scripts
 
+Instalar as dependências:
+pip install boto3
+pip install datetime
+pip install date
+pip install botocore
+
+Obs: Descrevi todos os import que tenho no código, pode ser que nem precise fazer todos os install. Faça o teste.
+
+Configurando a AWS:
+Depois de ter instalado o AWS Cli rode o comando aws configure e siga os passos na tela.
+
+Rodando o script:
+
+python3 nomedoscript.py
+
+ou
+
+python nomedoscript.py 
+
+A definição python ou pyton3 vai depender de como foi instalado o pytho na sua máquina.
+
+Qualquer dúvida me chama no telegram: @vitorta
+
+
+OBS: Alguns scripts foram ADAPTADOS e outros foram criados do ZERO.
