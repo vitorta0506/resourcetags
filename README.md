@@ -1,5 +1,5 @@
 # resourcetags
-Scripts em python para adicionar tags em alguns recursos da AWS baseado nas instâncias EC2
+Scripts em python para adicionar tag`s em alguns recursos da AWS baseado nas instâncias EC2
 
 ## Requisitos
 python 3 instalado
