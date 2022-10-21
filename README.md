@@ -2,9 +2,11 @@
 Scripts em python para adicionar tag`s em alguns recursos da AWS baseado nas instâncias EC2
 
 ## Requisitos
+```
 python 3 instalado
 pip para poder instalar o boto3
 aws cli para poder configurar os acessos da aws
+```
 
 ## Funcionamento
 
